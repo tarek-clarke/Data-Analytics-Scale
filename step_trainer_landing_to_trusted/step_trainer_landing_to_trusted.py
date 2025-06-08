@@ -3,7 +3,7 @@ from awsglue.context import GlueContext
 from pyspark.context import SparkContext
 from awsglue.dynamicframe import DynamicFrame
 from pyspark.sql import functions as F
-
+ 
 # Clean output S3 path before writing
 bucket = "tarekclarke"
 prefix = "step_trainer/trusted/"
