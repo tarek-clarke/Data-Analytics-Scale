@@ -54,7 +54,7 @@ accelerometer_trusted_df = accelerometer_df.join(
 # Debug: Print result count
 print("accelerometer_trusted rows:", accelerometer_trusted_df.count())
 
-# Optional: Only keep accelerometer columns in the output
+# Only keep accelerometer columns in the output
 accelerometer_trusted_df = accelerometer_trusted_df.select(accelerometer_df.columns)
 
 # Convert to DynamicFrame
