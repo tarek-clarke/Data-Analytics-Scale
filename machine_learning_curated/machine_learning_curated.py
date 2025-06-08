@@ -68,7 +68,7 @@ result = accel_customer.join(
     "inner"
 )
 
-# Optionally, prefix accelerometer columns to avoid name clashes
+# prefix accelerometer columns to avoid name clashes
 step_cols = step_trainer_df.columns
 accel_cols = [c for c in accelerometer_df.columns if c not in ["user", "timestamp"]]
 for c in accel_cols:
