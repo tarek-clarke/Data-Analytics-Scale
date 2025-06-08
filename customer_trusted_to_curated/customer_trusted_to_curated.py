@@ -64,11 +64,8 @@ customer_curated_df = customer_consented_df.join(
 
 # --- Deduplicate after join ---
 
-# Option 1: Deduplicate on email only (uncomment to use)
+# --- Deduplicate on email only (uncomment to use)
 customer_curated_df = customer_curated_df.dropDuplicates(["email"])
-
-# Option 2: Deduplicate on all columns (uncomment to use)
-# customer_curated_df = customer_curated_df.dropDuplicates()
 
 # --- Convert to DynamicFrame for Glue write ---
 customer_curated = DynamicFrame.fromDF(customer_curated_df, glueContext, "customer_curated")
