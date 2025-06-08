@@ -9,7 +9,7 @@ prefix = "customer/trusted/"
 s3 = boto3.resource('s3')
 bucket_obj = s3.Bucket(bucket)
 bucket_obj.objects.filter(Prefix=prefix).delete()
-
+ 
 sc = SparkContext()
 glueContext = GlueContext(sc)
 spark = glueContext.spark_session
