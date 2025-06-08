@@ -1,0 +1,1 @@
+SELECT * FROM "AwsDataCatalog"."default"."machine_learning_curated";

@@ -1,0 +1,1 @@
+SELECT * FROM "AwsDataCatalog"."default"."accelerometer_trusted";
