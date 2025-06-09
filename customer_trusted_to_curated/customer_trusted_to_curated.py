@@ -41,7 +41,7 @@ customer_consented_df = customer_consented_df.dropDuplicates()
 # --- Read accelerometer data ---
 accelerometer = glueContext.create_dynamic_frame.from_options(
     connection_type="s3",
-    connection_options={"paths": ["s3://tarekclarke/accelerometer/landing/"]},
+    connection_options={"paths": ["s3://tarekclarke/accelerometer/trusted/"]},
     format="json"
 )
 accelerometer_df = accelerometer.toDF()
