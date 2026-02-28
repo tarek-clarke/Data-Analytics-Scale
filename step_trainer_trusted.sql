@@ -1,0 +1,1 @@
+SELECT * FROM "AwsDataCatalog"."default"."step_trainer_trusted";
